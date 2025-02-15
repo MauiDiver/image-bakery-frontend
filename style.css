@@ -1,0 +1,149 @@
+/* Round corners for input fields and buttons */
+input, button {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Increase spacing between avatars */
+.artist-selection {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust for even spacing */
+    flex-wrap: wrap;
+}
+
+/* Center and space out "Current Selection" */
+#current-selection {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #B0B0B0; /* Medium Gray */
+}
+
+/* Add drop shadow to artist avatars */
+.artist-avatar {
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.2); /* Subtle white shadow */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Add hover effect for a subtle interaction */
+.artist-avatar:hover {
+    box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Ensure mobile layout has 2 avatars per row */
+@media (max-width: 600px) {
+    .artist-selection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two avatars per row */
+        gap: 20px;
+        justify-items: center;
+    }
+}
+
+/* Ensure the selected artist is centered */
+#featured-avatar {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Improve input field styling */
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #666666; /* Dark gray border */
+    border-radius: 8px;
+    background-color: #222222; /* Dark input background */
+    color: #F5F5F5; /* Light text */
+    box-sizing: border-box;
+}
+
+/* Improve button styling */
+button {
+    background-color: #E63946; /* Deep Red */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #C5303D; /* Slightly darker red */
+}
+
+/* Adjust heading styles */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #F5F5F5; /* Soft White */
+}
+
+/* Adjust the text below artist avatars */
+.artist-selection .artist-avatar + p {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #B0B0B0; /* Medium Gray */
+}
+
+/* Improve spacing for sections */
+#generator {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Set dark background */
+body {
+    background-color: #000000 !important; /* Pure Black */
+    color: #B0B0B0 !important; /* Medium Gray for readability */
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #F5F5F5 !important; /* Soft White */
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* General text */
+p, span, label {
+    color: #B0B0B0 !important; /* Medium Gray */
+}
+
+/* Navigation links */
+a {
+    color: #FFFFFF !important; /* Bright White */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E63946 !important; /* Deep Red hover */
+}
+
+/* Image Borders & Shadows */
+img {
+    border-radius: 8px;
+    box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.2); /* Subtle white glow */
+}
+
+/* Centered text for better UI */
+.centered-text {
+    text-align: center;
+}
